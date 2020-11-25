@@ -13,14 +13,14 @@ export default class Result extends React.Component {
 
     componentDidMount() {
 
-        fetch('http://localhost:3000/results', {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json, text/plain, */*',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(this.state)
-        })
+        // fetch('http://localhost:3000/results', {
+        //     method: 'POST',
+        //     headers: {
+        //         'Accept': 'application/json, text/plain, */*',
+        //         'Content-Type': 'application/json'
+        //     },
+        //     body: JSON.stringify(this.state)
+        // })
     }
 
     render() {

@@ -42,8 +42,11 @@ const LoginStudent = ()=> {
                     // });
 
                 }
+                
+            
                
-            }            
+            }   
+            setVerified(true);         
         }catch(error){ 
             if(error.response.data.detail==="No active account found with the given credentials"){
                 setError(4);

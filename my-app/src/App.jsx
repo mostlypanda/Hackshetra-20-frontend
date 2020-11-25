@@ -1,4 +1,5 @@
 import React from 'react';
+
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 import Quiz from './components/Quiz.jsx';
@@ -84,13 +85,17 @@ export default class App extends React.Component {
 
     render(){
         return(
+            <>
+            
             <div className="App">
+                
                 <div>
                     {this.state.questionId <= quizQuestions.length
                     ? this.renderQuiz() :this.finishQuiz()}
                 </div>
 
             </div>
+            </>
         )
     }
 }

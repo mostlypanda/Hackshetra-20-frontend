@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import ResultList from './ResultList.jsx'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
@@ -40,7 +41,9 @@ export default class Result extends React.Component {
                     for <strong>{this.props.questions - 1}</strong>!
                 </div>
                 <ResultList result={this.state.userResult}/>
-
+                <Link className="btnLink" to='/'><button
+                                className='btnStart'>Go to Home</button></Link>
+               
             </ReactCSSTransitionGroup>
         );
     }

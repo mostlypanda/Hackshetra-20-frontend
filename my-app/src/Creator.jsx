@@ -6,6 +6,7 @@ import * as Scroll from "react-scroll/modules/index";
 import Home from './components/Home';
 import LoginAdmin from './components/LoginAdmin';
 import Admin from './components/Admin';
+import LoginStudent from './components/LoginStudent';
 
     import {
         BrowserRouter,
@@ -76,6 +77,7 @@ export default class AppMain extends React.Component {
                         <Route  exact path="/" component={Home} />
                         <Route  path="/quiz" component={Main} />
                         <Route path="/login/admin" component={LoginAdmin} />
+                        <Route path="/login/student" component={LoginStudent} />
                         <Route path="/admin" component={Admin} />
                         <Route path="/app" component={AppQuiz} />
                         <Route component={NotFound}/>

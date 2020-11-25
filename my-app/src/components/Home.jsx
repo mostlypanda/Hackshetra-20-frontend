@@ -21,7 +21,7 @@ const Home =()=> {
                 
                 </div>
 
-                <Link  to='/login' class="btn">Go Ahead</Link>
+                <Link  to='/login/student' class="btn">Go Ahead</Link>
 
             </div>
             <div class="card">
